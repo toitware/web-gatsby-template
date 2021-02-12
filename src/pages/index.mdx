@@ -1,0 +1,87 @@
+---
+title: ᴛᴏɪᴛ
+path: /
+date: 2021-01-20
+---
+
+import { pinkWhiteTheme, greyBlueTheme, whiteBlueTheme } from "../components/theme";
+import webConsole from "../assets/images/webconsole.png";
+
+<HorizontalBlock theme={pinkWhiteTheme}>
+<HorizontalBlockItem>
+
+# Continuous firmware delivery
+
+Continuously update the code on your microcontrollers even over cellular connections.
+Monitor and securely service your devices in production; all through the Toit API.
+
+<GetStartedButton />
+
+</HorizontalBlockItem>
+<HorizontalBlockItem centered>
+
+<img src={webConsole} style="max-width:660px;width:100%;" />
+
+</HorizontalBlockItem>
+</HorizontalBlock>
+
+<HorizontalBlock theme={whiteBlueTheme} last>
+<HorizontalBlockItem>
+
+<Editor
+  editor={
+    'import gpio\n\
+\n\
+main:\n\
+  pin := gpio.Pin.out 21\n\
+  print "Blinking 5 times ..."\n\
+  5.repeat:\n\
+    pin.set 1\n\
+    sleep --ms=500\n\
+    pin.set 0\n\
+    sleep --ms=500\n\
+  print "Blinking done!"'
+  }
+  terminal={[
+    { Type: "Input", Content: "toit run main.toit" },
+    { Type: "Output", Content: "<process initiated>", Time: "2021-01-26 09:48:19" },
+    { Type: "Output", Content: "Blinking 5 times ...", Time: "2021-01-26 09:48:19" },
+    { Type: "Wait", Wait: 5000 },
+    { Type: "Output", Content: "Blinking done!", Time: "2021-01-26 09:48:24" },
+    { Type: "Output", Content: "<process finished>", Time: "2021-01-26 09:48:24" },
+  ]}
+/>
+
+</HorizontalBlockItem>
+<HorizontalBlockItem>
+
+###### Modular applications for embedded devices
+
+# Fast and safe
+
+Write your applications in our high-level, memory-safe language and let our battery-optimized virtual machine execute them efficiently on your microcontrollers.
+Fast to develop, safe to run.
+
+<HighLights>
+  <HighLight>
+
+<CodeIcon />
+
+###### Robust sandboxing
+
+Your applications run isolated from the system and each other on the devices.
+
+  </HighLight>
+  <HighLight>
+
+<ConnectionIcon />
+
+###### Secure communications
+
+You communicate with our cloud through a simple API, we take care of the rest.
+
+  </HighLight>
+</HighLights>
+
+</HorizontalBlockItem>
+</HorizontalBlock>
