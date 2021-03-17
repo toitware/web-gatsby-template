@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "ᴛᴏɪᴛ",
+    title: "Toit",
+    siteUrl: "https://template.toit.io",
     // Put common data you want to reuse in the site here.
   },
   plugins: [
@@ -20,7 +21,15 @@ module.exports = {
         icon: "src/images/icon.png",
       },
     },
-    "gatsby-plugin-mdx",
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        extensions: [".mdx", ".md"],
+        defaultLayouts: {
+          default: require.resolve("./src/components/Layout/index.tsx"),
+        },
+      },
+    },
     {
       resolve: "gatsby-source-filesystem",
       options: {
