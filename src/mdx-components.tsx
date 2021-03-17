@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
+
 import { Link, Typography } from "@material-ui/core";
 import { MDXProviderComponentsProp } from "@mdx-js/react";
 import React from "react";
