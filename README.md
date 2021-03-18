@@ -17,9 +17,11 @@ The version of `node` must be >= v12.16.1, i.e. the version of node that comes w
 - To get VS Code to automatically fix linting errors (if possible) and organize imports on save, add the following to your settings.json file:
 
         "editor.codeActionsOnSave": [
+          "source.fixAll.eslint",
           "source.organizeImports",
-          "source.fixAll.eslint"
         ],
+
+  Be careful with `source.organizeImports` however since that can drastically reduce performance in vscode.
 
 ## Useful developer tools
 
