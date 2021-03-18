@@ -1,5 +1,6 @@
 import { makeStyles } from "@material-ui/core";
 import * as React from "react";
+import { ReactNode } from "react";
 import Footer from "./Footer";
 import Header from "./Header";
 
@@ -32,11 +33,15 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
+type Props = {
+  children: ReactNode;
+};
+
 /**
  * The actual content of the layout, separated into its own component so it has
  * access to the theme.
  */
-const Root: React.FC = ({ children }) => {
+export function Root({ children }: Props): JSX.Element {
   const classes = useStyles();
 
   return (
@@ -46,6 +51,6 @@ const Root: React.FC = ({ children }) => {
       <Footer />
     </div>
   );
-};
+}
 
 export default Root;

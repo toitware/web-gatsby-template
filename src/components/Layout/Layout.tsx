@@ -1,7 +1,8 @@
 import { ThemeProvider } from "@material-ui/core";
 import { MDXProvider } from "@mdx-js/react";
 import { graphql, useStaticQuery } from "gatsby";
-import React from "react";
+import * as React from "react";
+import { ReactNode } from "react";
 import { Helmet } from "react-helmet";
 import { components, shorthands } from "../../mdx-components";
 import { primaryTheme } from "../../theme";
@@ -16,6 +17,7 @@ interface GraphType {
 }
 
 interface LayoutProps {
+  children: ReactNode;
   pageContext: {
     frontmatter: {
       title?: string;
@@ -24,7 +26,7 @@ interface LayoutProps {
   };
 }
 
-export const Layout: React.FC<LayoutProps> = (props) => {
+export function Layout(props: LayoutProps): JSX.Element {
   const data: GraphType = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -47,6 +49,6 @@ export const Layout: React.FC<LayoutProps> = (props) => {
       </ThemeProvider>
     </MDXProvider>
   );
-};
+}
 
 export default Layout;
