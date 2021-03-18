@@ -1,9 +1,13 @@
+import { render, screen } from "@testing-library/react";
 import React from "react";
-import renderer from "react-test-renderer";
 import Title from "../Title";
+
 describe("Title", () => {
   it("renders correctly", () => {
-    const tree = renderer.create(<Title>foobar</Title>).toJSON();
-    expect(tree).toMatchSnapshot();
+    const result = render(<Title>title content</Title>);
+
+    expect(result.container.firstChild).toMatchSnapshot();
+
+    expect(screen.getByText("title content")).toBeInstanceOf(HTMLHeadingElement);
   });
 });

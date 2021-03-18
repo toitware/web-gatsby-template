@@ -2,8 +2,8 @@
 
 exports[`Title renders correctly 1`] = `
 <h1
-  className="MuiTypography-root MuiTypography-h1"
+  class="MuiTypography-root MuiTypography-h1"
 >
-  foobar
+  title content
 </h1>
 `;
