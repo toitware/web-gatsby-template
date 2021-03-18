@@ -38,6 +38,7 @@ const useStyles = makeStyles((theme) => ({
  */
 const Root: React.FC = ({ children }) => {
   const classes = useStyles();
+
   return (
     <div className={classes.root}>
       <Header />

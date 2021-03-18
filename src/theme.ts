@@ -1,4 +1,4 @@
-import { createMuiTheme, PaletteType, responsiveFontSizes } from "@material-ui/core";
+import { createMuiTheme, PaletteType, responsiveFontSizes, Theme } from "@material-ui/core";
 import Color from "color";
 
 const defaultSpacing = 8;
@@ -38,7 +38,7 @@ type CreateThemeParameters = {
   spacing?: number;
 };
 
-function createTheme({
+export function createTheme({
   type = "light",
   background,
   text,
@@ -48,7 +48,7 @@ function createTheme({
   secondary = secondaryRed,
   secondaryContrast = Color("white"),
   spacing = defaultSpacing,
-}: CreateThemeParameters) {
+}: CreateThemeParameters): Theme {
   const textColor = text.string();
   const bodyFontFamily = "Roboto, Helvetica, Arial, sans-serif";
   const titleFontFamily = "Canano Light, Helvetica, Arial, sans-serif";
