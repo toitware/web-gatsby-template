@@ -8,7 +8,7 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "lint": "eslint '*/**/*.{js,ts,tsx}' --max-warnings=0"
+    "lint": "eslint '**/*.{js,ts,tsx}' --max-warnings=0"
   },
   "eslintConfig": {
     "extends": "react-app"
