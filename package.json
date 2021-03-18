@@ -9,7 +9,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "lint": "eslint '**/*.{js,ts,tsx}' --max-warnings=0",
-    "test": "jest --ci"
+    "test": "jest",
+    "test:jenkins": "jest --ci --reporters=jest-junit --coverage  --coverageDirectory=coverage"
   },
   "eslintConfig": {
     "extends": "react-app"
