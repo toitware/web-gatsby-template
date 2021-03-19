@@ -1,7 +1,7 @@
 import "@testing-library/jest-dom"; // Provides jest dom matchers
 import { render, screen } from "@testing-library/react";
+import { StableClassNames } from "@toitware/testing-utils";
 import React from "react";
-import StableClassNames from "./utils/stable_class_names";
 import Title from "../Title";
 
 describe("Title", () => {

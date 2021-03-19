@@ -33,6 +33,7 @@
     "@material-ui/core": "^4.11.3",
     "@mdx-js/mdx": "^1.6.22",
     "@mdx-js/react": "^1.6.22",
+    "@toitware/testing-utils": "^0.0.5",
     "@types/color": "^3.0.1",
     "@types/jest": "^26.0.21",
     "@types/mdx-js__react": "^1.5.3",

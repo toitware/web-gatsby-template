@@ -10,6 +10,8 @@ If you haven't installed `node` yet, install `node` from [nodejs.org](https://no
 
 The version of `node` must be >= v12.16.1, i.e. the version of node that comes with yarn is not the latest.
 
+> To be able to `yarn install` in this repository, make sure to [authenticate with the GitHub registry](https://docs.github.com/en/packages/guides/configuring-npm-for-use-with-github-packages#authenticating-to-github-packages). 
+
 ## Linting and imports in VS Code
 
 - Add the ESLint extension to VS Code to get linting directly in the code. https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint.
