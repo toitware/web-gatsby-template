@@ -1,6 +1,13 @@
 // This config has been initially copied from:
 // https://www.gatsbyjs.com/docs/how-to/testing/unit-testing/
 module.exports = {
+  testMatch: [
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[jt]s?(x)",
+    // This is just the default `testMatch` with the only difference, that utils
+    // inside __tests__ folders are not executed as tests:
+    "!**/__tests__/utils/**/*",
+  ],
   transform: {
     "^.+\\.[jt]sx?$": "<rootDir>/jest-preprocess.js",
   },
