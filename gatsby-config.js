@@ -13,6 +13,10 @@ module.exports = {
         allExtensions: true, // defaults to false
       },
     },
+    "gatsby-plugin-typescript",
+    "gatsby-plugin-typescript-checker",
+    "gatsby-plugin-eslint",
+    "gatsby-plugin-material-ui",
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
     {
