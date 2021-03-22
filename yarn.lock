@@ -1757,10 +1757,10 @@
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-"@toitware/testing-utils@^0.0.5":
-  version "0.0.5"
-  resolved "https://npm.pkg.github.com/download/@toitware/testing-utils/0.0.5/9c7b197adc97dd0a35d8a58e94a4195a479459b30cca902b03cf7bb25ef03ddc#1729d4d1153b88ad2ff84b6995f77f475fa6c494"
-  integrity sha512-yzLspAbIlIhf1INRVBnqQ9bqf/CzsjoTe0sGWo3UGaVdMlQP97deecp0jMRjU3Pikjjkln/LOkB2UCYgC5UxnA==
+"@toitware/testing-utils@^0.0.7":
+  version "0.0.7"
+  resolved "https://npm.pkg.github.com/download/@toitware/testing-utils/0.0.7/a909d79f9dd7aebe26bb49dd106ee6ffd247101b1c90b8096c4faa8b3e7b6b99#71e7223fe64fbe684e7a9a6e495b0eb4ecaa0fd4"
+  integrity sha512-aHXbxxZH1Dh1OdAsVYcu02LQI7stXA9HM68ErFPDIAuNszZYFRTQCQNRAwk6VPntyRhjmpp5lZhYIz1tktb52Q==
 
 "@tokenizer/token@^0.1.1":
   version "0.1.1"
