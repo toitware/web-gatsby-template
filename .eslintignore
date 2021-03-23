@@ -1,3 +1,5 @@
 /node_modules/
-/build/
-/src/serviceWorker.ts
+/public/
+/assets/
+/.cache/
+/coverage/
