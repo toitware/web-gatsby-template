@@ -6,6 +6,10 @@ pipeline {
       }
     }
 
+    environment {
+        GITHUB_TOKEN = credentials('leon-github-npm')
+    }
+
     options {
       timeout(time: 30, unit: 'MINUTES')
     }
@@ -13,7 +17,7 @@ pipeline {
     stages {
         stage("install") {
             steps {
-                sh "npm config set //registry.npmjs.org/:_authToken=${env.leon-github-npm}"
+                sh "npm config set //registry.npmjs.org/:_authToken=${env.GITHUB_TOKEN}"
                 sh "yarn install"
             }
         }
