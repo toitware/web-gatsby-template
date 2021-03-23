@@ -13,6 +13,7 @@ pipeline {
     stages {
         stage("install") {
             steps {
+                sh "npm config set //registry.npmjs.org/:_authToken=${env.leon-github-npm}"
                 sh "yarn install"
             }
         }
