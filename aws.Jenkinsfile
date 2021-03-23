@@ -17,7 +17,7 @@ pipeline {
     stages {
         stage("install") {
             steps {
-                sh "npm config set //registry.npmjs.org/:_authToken=${env.GITHUB_TOKEN}"
+                sh 'npm config set //registry.npmjs.org/:_authToken=${env.GITHUB_TOKEN}'
                 sh "yarn install"
             }
         }
