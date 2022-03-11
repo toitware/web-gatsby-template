@@ -8,7 +8,7 @@ on:
 env:
   BUCKET: toit-web
   BUCKET_PATH: web-gatsby-template
-  BUILD_DIR: build
+  BUILD_DIR: public
   HAS_PROTOBUF: false
   RUN_TESTS: true
   # Upload is disabled in the 'upload' job. Enable it there.
