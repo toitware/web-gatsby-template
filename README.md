@@ -1,5 +1,10 @@
 # Setup for development
 
+## Node 16
+This project uses node 16 (see .nvmrc).
+
+Use `nvm` to support multiple Node versions on your system.
+
 ## yarn
 
 `yarn` is used in web projects. To install `yarn`, follow the guide [here](https://yarnpkg.com/lang/en/docs/install/#debian-stable).
@@ -20,13 +25,13 @@ Here's a short summary of what you need to do:
    1. Name it appropriately
    2. Check `write:packages` and `read:packages`
 2. Copy the token
-3. Add the token to your `~/.npmrc`:  
+3. Add the token to your `~/.npmrc`:
    `echo "//npm.pkg.github.com/:_authToken=YOUR_TOKEN" >> ~/.npmrc`
 
 ## Linting and imports in VS Code
 
 - Add the ESLint extension to VS Code to get linting directly in the code. https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint.
-- To get the right indentation, etc. directly in the code, and on save add the Prettier extension to VS Code. https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode. 
+- To get the right indentation, etc. directly in the code, and on save add the Prettier extension to VS Code. https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode.
 - To get VS Code to automatically fix linting errors (if possible) and organize imports on save, add the following to your settings.json file:
 
         "editor.codeActionsOnSave": [
@@ -47,10 +52,10 @@ In the project directory, you can run:
 
 ### `yarn develop`
 
-Runs the app in the development mode.  
+Runs the app in the development mode.
 Open [http://localhost:8000](http://localhost:8000) to view it in the browser.
 
-The page will reload if you make edits.  
+The page will reload if you make edits.
 You will also see any lint errors in the console.
 
 If you want to be able to access the development server from other computers,
