@@ -37,6 +37,10 @@ jobs:
           sudo apt-get install protobuf-compiler
           make protobuf
 
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: .nvmrc
+
       - name: Lint
         run: |
           yarn lint
@@ -47,8 +51,6 @@ jobs:
           yarn test:ci
 
       - name: Build
-        env:
-          NODE_OPTIONS: --openssl-legacy-provider
         run: |
           yarn build
 
